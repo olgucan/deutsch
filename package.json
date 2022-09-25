@@ -1,0 +1,17 @@
+{
+  "name": "deutch",
+  "version": "1.0.0",
+  "description": "olgucan",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "keywords": [
+    "almanca"
+  ],
+  "author": "olgu",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

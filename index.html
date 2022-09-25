@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style2.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+  <header>
+    <nav class="d-flex p-4">
+       <a href="#" class="ms-4 ms-lg-0">
+        <img src="./image-header/logo-black.svg" class="img-fluid logo" alt="">
+       </a>
+       <div class="flex-grow-1 d-none d-lg-block">
+        <div class="d-flex justify-content-between align-items-center">
+          
+            <small class="cs-small d-block">
+              B&C Collection ist ein führendes B2B-Unternehmen, das exklusiv für die Marketing-Branche hochwertige, personalisierbare Kleidung entwirft und fertigt.
+            </small>
+            <ul class="d-flex cs-social" >
+              <li><a href=""><u>Vertriebspartner</u> </a></li>
+              <li><a href=""><u>Newsletter</u></a></li>
+              <li><a href=""><u>Kontakt</u></a></li>
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li style=" cursor: pointer;" onclick="language()">DE <i class="fa-solid fa-down-long"></i> <div class="languagecon">
+                <a href="">EN</a>
+                <a href="">FR</a>
+                <a href="">NL</a>
+                <a href="">ES</a>
+                <a href="">IT</a>
+              </div></li>
+            </ul>
+           
+        </div>
+        <div class="mt-3 px-2  cs-uber-container">
+          <div class="d-flex ">
+            <ul class="d-flex flex-grow-1 justify-content-center align-items-center cs-uber">
+              <li ><a href="" >ÜBER B&C</a></li>
+              <li class="first-uber"><a href="">NACHHALTIGKEIT
+                <div class="cs-hover-uber">
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                </div>
+              </a></li>
+              <li class="first-uber"><a href="">GESCHÄFTSFELDER
+                <div class="cs-hover-uber">
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                </div>
+              </a></li>
+              <li class="first-uber"><a href="">ENTDECKEN
+                <div class="cs-hover-uber">
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                </div>
+              </a></li>
+              <li ><a href="">BLOG</a></li>
+              <li class="first-uber"><a href="">MARKETING-RESSOURGEN
+                <div class="cs-hover-uber">
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                  <a href="">lorem</a>
+                </div>
+              </a></li>
+            </ul>
+            <div class="d-flex justify-content-end align-items-center">
+              <ul class="d-flex align-items-center cs-right">
+                <li><i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i></li>
+                <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                <li>
+                 
+                 
+                  <button onclick="openNav()" class="btn"> <i class="fa-solid fa-user"></i></button> 
+                 
+                  
+              </li>
+              </ul>
+            </div><!-- modal-content -->
+          </div><!-- modal-dialog -->
+        </div><!-- modal -->
+        
+        <!-- Modal -->
+        <div id="mySidenav" class="sidenav ">
+          <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+          <h4>RESELLER-LOGIN</h4>
+          <p>Melden Sie sich bei Ihrem Reseller-Konto an, um auf alle Ihre Ressourcen zuzugreifen
+          </p>
+          <div class="d-flex flex-column align-items-start">
+            <label for="BENUTZERNAME" >Benutzername</label> <br>
+            <input type="text" id="BENUTZERNAME" placeholder="BENUTZERNAME">
+          </div>
+          <div class="d-flex flex-column align-items-start">
+            <label for="passwort" >Passwort</label>
+            <input type="text" id="passwort" placeholder="passwort">
+          </div>
+         
+          <div class="text-left">
+          <a href="#"><small>Forget your password ?</small></a> 
+          </div>
+          <a href="#" class="btn  d-block text-center w-100 text-white" style="background-color: #CC973C;">LOGIN</a>
+
+          <h5 style="font-weight: bolder;" class="my-5">SIE SIND IMPRINT-PROFESSIONAL UND MÖCHTEN IHR B&C-KONTO ERSTELLEN?</h5>
+
+          <a href="#" class="btn btn-dark">EIN KONTO ERSTELLEN</a>
+          
+        </div>
+        
+            </div>
+       
+          </div>
+         
+        </div>
+       </div>
+
+       <div class="togglecontainer  d-block d-lg-none mt-4" style="margin-left: auto;"><div class="mytoggle"></div></div>
+    </nav>
+    <div class="bg-dark text-white cs-bgdark d-none d-lg-block">
+      <ul class="d-flex justify-content-center cs-black-middle">
+        <li ><a href="">ALLE
+        
+        </a></li>
+        <li ><a href="" class="alle-hover">T-SHIRTS
+          <div class="cs-alle">
+             <!-- <div class="grid">
+              <div class=""   >
+                <div style="position:relative ;">
+                  <img  style="height:100% ;width:100%" src="https://api.bc-collection.eu/storage/20823/2102_BC_Site_Catalogue_Mouse-over-banners_T-shirts_0.jpeg" alt="">
+                   <h1 style="position: absolute;top: 50%;left:50%;color: white;transform: translateX(-50%);">T-SHIRTS</h1>
+                </div>
+              </div>
+              <div class="">
+                <p>KOLLEKTIONEN</p>
+                <a href="">B&C IN KONVERSION BIO-BAUMWOLL INSPIRE LINIE</a>
+                <a href="">B&C #E LINIE</a>
+                <a href="">TRIBLEND T-SHIRTS</a>
+                <a href="">SUBLIMATION T-SHIRTS</a>
+                <a href="">B&C CORE ATTITUDE</a>
+                <a href="">B&C LAB T-SHIRTS</a>
+                <a href="">B&C PRO COLLECTION</a>
+                <a href="">ALLE KOLLEKTIONEN</a>
+              </div>
+              <div class="text-left">
+                <p>ZULETZT ANGESEHEN</p>
+                <p class="text-muted">Sie haben noch kein Produkt gesehen!</p>
+                
+                <p >IN MEINER WUNSCHLISTE</p>
+                <p class="text-muted">Sie haben Ihrer Wunschliste noch kein Produkt hinzugefügt.
+                  Klicken Sie auf „Zur Wunschliste hinzufügen“, um Ihre Auswahl zu speichern.</p>
+              </div>
+             </div> -->
+           
+         </div>
+        </a></li>
+        <li ><a href="" class="alle-hover">SWEATSHIRTS
+          <div class="cs-alle"></div>
+        </a></li>
+        <li ><a href="" class="alle-hover">HEMDEN
+          <div class="cs-alle"></div>
+        </a></li>
+        <li ><a href="" class="alle-hover">SOFTSHELL
+          <div class="cs-alle"></div>
+        </a></li>
+        <li ><a href="" class="alle-hover">JACKEN
+          <div class="cs-alle"></div>
+        </a></li>
+        <li ><a href="" class="alle-hover">FLEECE
+          <div class="cs-alle"></div>
+        </a></li>
+        <li ><a href="" class="alle-hover">HOSE
+          <div class="cs-alle"></div>
+        </a></li>
+        <li ><a href="">INSPIRED TOMORROW_"</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="searchinput w-100 " style="position: absolute;z-index:500">
+    <input type="text" placeholder="GEBEN SIE HIER IHRE SUCHE EIN (PRODUKT ODER GESCHAFTSFELD)" class="w-100 h-100 p-4">
+    <div class="x-mark">
+      <i class="fa-solid fa-xmark" style="font-size: 30px;" ></i>
+      <span>SUCHE <br> SCHELISSEN</span>
+    </div>
+  </div>
+    <div class="olguslider">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- <div class="swiper-slide ">
+            <iframe width="100%" height="100%" src="https://player.vimeo.com/video/709024892?autoplay=0&amp;loop=1&amp;muted=1&amp;background=1" frameborder="0" allow="autoplay; fullscreen" class="slider-cover__background__iframe" data-ready="true"></iframe>
+          </div> -->
+          <div class="swiper-slide">
+            <img src="http://www.bc-collection.eu/sites/default/files/styles/slider_background/public/slide/background/large-2207_BC_Site_HOMEPAGE_Slider_E-brochure-Polos.jpg?h=b4af42f4&itok=kq2e4W5j" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="http://www.bc-collection.eu/sites/default/files/styles/slider_background/public/slide/background/2205_02_BC_Site_HOMEPAGE_%23Sweats_mai.jpg?itok=oYHpFvNh" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="http://www.bc-collection.eu/sites/default/files/styles/slider_background/public/slide/background/2205_03_BC_Site_HOMEPAGE_FairWear-leader_slider2.jpg?h=da3c4ee0&itok=vKfh-SdX" alt="">
+          </div>
+          <!-- <div class="swiper-slide">
+            <iframe width="100%" height="100%" src="https://player.vimeo.com/video/749901396?autoplay=0&amp;loop=1&amp;muted=1&amp;background=1" frameborder="0" allow="autoplay; fullscreen" class="slider-cover__background__iframe" data-ready="true"></iframe>
+          </div> -->
+          
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>  
+        <div class="secondslider">
+         <div class="d-flex align-self-end ">
+          <button class="tikla"><i class="fa-sharp fa-solid fa-arrow-left"></i></button>      
+          <button class="tikla2"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+         </div>
+          <div class=" bg-dark text-white">
+            <div id="carouselExampleControlsNoTouching" class="carousel  carousel-fade" data-bs-touch="false" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active d-flex">
+                  <div class="text-white bg-dark align-self-end " style="height: 70px; width:250px ;flex:2">
+                    <span class="slider-cover__next-title">NEU <br> B&amp;C BLOG IST ONLINE</span>
+                  </div>
+                <div class="w-50">
+                  <img class="img-fluid " src="http://www.bc-collection.eu/sites/default/files/styles/slider_background/public/slide/background/large-2207_BC_Site_HOMEPAGE_Slider_E-brochure-Polos.jpg?h=b4af42f4&itok=kq2e4W5j" class="d-block " alt="...">
+
+                </div>                 
+                </div>
+                <div class="carousel-item d-flex">
+                  <div class="text-white bg-dark align-self-end" style="height: 70px;width:250px ;flex:2">
+                    <span class="slider-cover__next-title">Lorem, ipsum dolor.</span>
+                  </div>
+                  <div class="w-50">
+                    <img class="img-fluid" src="http://www.bc-collection.eu/sites/default/files/styles/slider_background/public/slide/background/2205_02_BC_Site_HOMEPAGE_%23Sweats_mai.jpg?itok=oYHpFvNh" class="d-block " alt="...">
+                  </div>
+                  
+                  
+                </div>
+                <div class="carousel-item d-flex ">
+                  <div class="text-white bg-dark align-self-end" style="height: 70px;flex:2 ;">
+                    <span class="slider-cover__next-title">Lorem ipsum dolor sit.</span>
+                  </div>
+                  <div class="w-50">
+                    <img class="img-fluid" src="http://www.bc-collection.eu/sites/default/files/styles/slider_background/public/slide/background/2205_03_BC_Site_HOMEPAGE_FairWear-leader_slider2.jpg?h=da3c4ee0&itok=vKfh-SdX" class="d-block " alt="...">
+                  </div>
+                  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>      
+        </div>  
+    </div> 
+    <div class="container">
+     
+     <div class="row gap-4 mt-5">
+      <div class="col-md-5 offset-md-1 cssecondcon">
+        <div class="cssecondhover ilkresim">
+          <div >
+             <div>
+              <button>ENTECKEN</button>
+              <h3>B&C Inspire & Poloshirts</h3>
+             </div>
+           
+            <p>Jetzt Entdecken &#8594</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5  cssecondcon">
+        <div class="cssecondhover ikinciresim">
+          <div >
+             <div>
+              <button>ENTECKEN</button>
+              <h3>B&C Inspire & Poloshirts</h3>
+             </div>
+           
+            <p>Jetzt Entdecken &#8594</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 offset-md-1 cssecondcon"> 
+        <div class="cssecondhover ucuncuresim">
+          <div >
+             <div>
+              <button >ENTECKEN</button>
+              <h3>B&C Inspire & Poloshirts</h3>
+             </div>
+           
+            <p>Jetzt Entdecken &#8594</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4  cssecondcon" > 
+          <div class="cssecondhover">
+          <div >
+             <div>
+              <button>ENTECKEN</button>
+              <h3>B&C Inspire & Poloshirts</h3>
+             </div>
+           
+            <p>Jetzt Entdecken &#8594</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3  cssecondcon"> 
+        <div class="cssecondhover besinciresim">
+          <div >
+             <div>
+              <button>ENTECKEN</button>
+              <h3>B&C Inspire & Poloshirts</h3>
+             </div>
+           
+            <p>Jetzt Entdecken &#8594</p>
+          </div>
+        </div>
+      </div>
+     </div>
+
+
+
+    </div>
+    <main class="main mt-5">
+
+      <div class="page-title">
+          <h2>Die beliebtesten Produkte</h2>
+      </div>
+
+      <div class="popularButtons">
+          <button class="btn-active" data-categor="tshirts">T-shirts</button>
+          <button data-categor="poloshirts">Poloshirts</button>
+          <button data-categor="sweatshirts">Sweatshirts</button>
+          <button data-categor="shirts">Hemden</button>
+      </div>
+
+      <div class="container-fluid">
+     <div class="row">
+        
+        <div class="col-md-2 offset-md-2 cshover">
+             <div class="hoverpic1">
+              <img src="./images/pic2.jpg" class="img-fluid">
+              
+             </div>
+             <p> <i class="fa-regular fa-heart"></i></p>
+            <h2 class="cardDiv__title">B&C Inspire T /men_°</h2>
+            <h4 class="cardDiv__subtitle">TM042</h4>
+        
+        </div>
+        <div class="col-md-2 cshover">
+             <div class="hoverpic2">
+              <img src="./images/pic3.jpg" class="img-fluid">
+              
+             </div>
+            
+             <p> <i class="fa-regular fa-heart"></i></p>
+            <h2 class="cardDiv__title">B&C Inspire T /men_°</h2>
+            <h4 class="cardDiv__subtitle">TM042</h4>
+        
+        </div>
+        <div class="col-md-2 ">
+         
+            <img src="./images/pic4.jpg" class="img-fluid">
+            <h2 class="cardDiv__title">B&C Inspire T /men_°</h2>
+            <h4 class="cardDiv__subtitle">TM042</h4>
+           
+        </div>
+        <div class="col-md-2 cshover">
+         
+             <div class="hoverpic3">
+              <img src="./images/pic5.jpg" class="img-fluid">
+               
+             </div>
+             <p> <i class="fa-regular fa-heart"></i></p>
+            <h2 class="cardDiv__title">B&C Inspire T /men_°</h2>
+            <h4 class="cardDiv__subtitle">TM042</h4>
+        
+        </div>
+     </div>
+    
+
+          
+
+         
+
+         
+
+       
+
+      </div>
+
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="" class="white-card">
+              <h2 class="">RESOURCE SECTION</h2>
+              <p class="">VIDEOS, BROCHURES, HOW TO, TESTIMONIALS, CUSTOMISE IT TOOL, PRIVATE
+                  ROOM, all the tools to support your business & give you a competitive edge</p>
+              <p class="check">CHECK NOW <i class="fa-solid fa-right-long"></i></p>
+          </a>
+          </div>
+          <div class="col-md-3">
+            <a href="" class="gray-card">
+             <div> <img src="./images/book.png" alt=""></div>
+              <h3 class="">DOWNLOAD OUR BROCHURES</h3>
+              <p class="">All B&C brochures and flyers are available online. Do you
+                  prefer a hard copy? Submit the application form!
+              </p>
+          </a>
+          </div>
+          <div class="col-md-3">
+            <a href="" class="gray-card">
+              <div><img src="./images/eye.png" alt=""></div>
+              <h3 class="">CUSTOMISE IT</h3>
+              <p class="">Get a preview of your logo on a B&C product. Create your
+                  exclusive, personal and secure decoration projects with B&C styles.</p>
+          </a>
+          </div>
+          <div class="col-md-3">
+            <a href="" class="gray-card">
+              <div><img src="./images/pencil.png" alt=""></div>
+              <h3 class="">WHITE PAPERS</h3>
+              <p class="">The white papers will guide you in selecting the desired
+                  style, and will show your customers the decorating options. They will help your team know how to
+                  decorate the chosen style at best.</p>
+          </a>
+          </div>
+      </div> 
+      </div>
+      <div class="blackArea">
+          <div class="blackArea__title">Stay updated</div>
+          <div class="blackArea__inputArea">
+              <input type="text" class="blackArea__input">
+              <button>subscribe</button>
+          </div>
+          <div class="blackArea__contractArea">
+              <span class="contractFirst">This form uses ReCaptcha</span>
+              <div class="flex">
+                <input type="checkbox" onchange="myselect()">
+                <span class="contractSecond">I AGREE with the <span class="white">B&amp;C Privacy Policy</span>. We use the information we collect to provide you our
+                    products, offers and services, to deliver to you advertisements and other content tailored to your
+                    interests.</span>
+                  <p class="text-danger cs-danger">optin ist ein Pflichtfeld</p>
+              </div>
+           
+          </div>
+      </div>
+
+      <div class="imageArea">
+          <img src="./images/first.png" alt="" class="first img-fluid">
+          <img src="./images/second.png" alt="" class="second img-fluid">
+          <img src="./images/third.png" alt="" class="third img-fluid">
+      </div>
+  </main>
+
+
+  <div class="container-fluid bg-light p-5 " style="margin-bottom:100px ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="./image-header/logo-black.svg" alt="">
+        </div>
+        <div class="col-md-5">
+          <strong>© B&C Collection 2021</strong>
+          <strong>The Cotton Group SA - Drève Richelle 161 O - Box 5 - 1410 Waterloo - Belgium</strong>
+          <strong>T. +32 (0)2 3521100 | RPM BE0440097116</strong> <br>
+          <small>B&C Collection ist ein führendes B2B-Unternehmen, das exklusiv für die Marketing-Branche hochwertige, 
+            personalisierbare Kleidung entwirft und fertigt.</small>
+        </div>
+        <div class="col-md-4 offset-md-1 ">
+            
+           <div class="" style="display: flex;">
+            <span>Folgen Sie uns</span>
+            <div class="ms-5 flex flex-wrap justify-content-center text-center footeritems" style="width:18%;">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div style="">
+         <p>
+          Auf dieser Seite werden Cookies verwendet, 
+          um Ihnen einen nutzerfreundlichen und personalisierten Service anbieten zu können.
+           Mit Nutzung dieser Website stimmen Sie unserer Verwendung von Cookies zu.
+            Bitte lesen Sie unsere Cookie-Richtlinien, um mehr darüber zu erfahren, 
+            wie wir Cookies verwenden und wie Sie diese verwalten können.
+
+         </p>
+        <div> <a href="#" class="btn btn-dark ">Ich Stimme zu</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <ul class="cs-nav">
+    <li class="cs-li"><p><span>Valizler</span> <span>></span></p>
+      
+      <div class="cs-valizcontainer">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="cs-valizcol1">
+          <h2>MODELE GÖRE</h2>
+            <ul>
+              <li><a href=""> Kabin Valizler</a></li>
+              <li><a href="">Orta Boy Valiz (60-69 cm)</a></li>
+              <li><a href="">Büyük Boy Valiz (80-86 cm)</a></li>
+              <li><a href="">American Tourister</a></li>
+              <li><a href="">Lipault Paris</a></li>
+              <li><a href="">Çocuk Valizleri</a></li>
+              <li><a href="">Takım Elbise Çantası</a></li>
+              <li><a href="">Tüm Valizler</a></li>
+            </ul>
+            <h2>Tüm MODELE GÖRE <i>&#x3e;</i></h2>
+        </div>
+        <div class="cs-valizcol1">
+          <h2>MATERYALE GÖRE</h2>
+            <ul>
+              <li><a href=""> Sert Valizler</a></li>
+              <li><a href="">Kumaş Valizler</a></li>
+              <li><a href="">Lightweight Hafif Valizler</a></li>
+              
+            </ul>
+            <h2>SEYAHATE GÖRE </h2>
+            <ul>
+              <li><a href=""> Sert Valizler</a></li>
+              <li><a href="">Kumaş Valizler</a></li>
+              <li><a href="">Lightweight Hafif Valizler</a></li>
+              
+            </ul>
+        </div>
+        <div class="cs-valizcol1">
+          <h2>AKSESUARLAR</h2>
+            <ul>
+              <li><a href="">Valiz Kılıfları</a></li>
+              <li><a href="">Güvenlik Aksesuarları</a></li>
+              <li><a href="">Boyun Yastıkları</a></li>
+              <li><a href="">Kozmetik Çantaları</a></li>
+              
+            </ul>
+           
+        </div>
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2022/06/17/5b181184-201d-40e9-a865-85098e3c0210.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+
+   </div>
+    </li>
+    <li class="cs-li"><p><span>Sırt Çantaları</span> <span>></span></p>
+      
+      <div class="cs-valizcontainer ">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="cs-valizcol1">
+          <h2><a href="">MODELE GÖRE</a></h2>
+            <ul>
+              <li><a href=""> Labtop Sırt Çantaları</a></li>
+              <li><a href="">Kadın Labtop Çantaları</a></li>
+              <li><a href="">Duffle Çantalar</a></li>
+              <li><a href="">Sırt Çantaları</a></li>
+              <li><a href="">Çocuk Sırt Çantaları</a></li>
+              <li><a href="">Tüm Sırt Çantaları</a></li>
+              
+            </ul>
+           
+        </div>
+        <div class="cs-valizcol1">
+          <h2>EKRAN ÖLÇÜSÜNE GÖRE</h2>
+            <ul>
+              <li><a href=""> 9.7""/24.6 cm</a></li>
+              <li><a href=""> 13.3""/33.8 cm</a></li>
+              <li><a href=""> 15.6""/39.6 cm</a></li>
+              <li><a href=""> 16""/40.6 cm</a></li>
+              <li><a href=""> 17.3""/43.9 cm</a></li>
+              
+              
+            </ul>
+           
+        </div>
+        
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2021/03/19/473f37fe-6ef3-49ae-a739-b5f29896e9ca.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2021/03/19/b9c7c210-62a4-4db0-9660-1de9dfcc87de.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+
+   </div>
+    </li>
+    <li class="cs-li"><p><span>Çantalar</span> <span>></span></p>
+      
+      <div class="cs-valizcontainer ">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="cs-valizcol1">
+          <h2>MODELE GÖRE</h2>
+            <ul>
+              <li><a href="">Labtop Çantaları</a></li>
+              <li><a href="">Labtop Çantaları</a></li>
+              <li><a href="">Bel Çantaları</a></li>
+              <li><a href="">Tablet ve Crossover Çantaları</a></li>
+              <li><a href="">Laptop Kılıfları</a></li>
+              <li><a href="">Kozmetik Çantaları</a></li>
+              <li><a href="">Tüm Çantalar</a></li>
+            </ul>
+            
+        </div>
+        <div class="cs-valizcol1">
+          <h2>KADIN ÇANTALARI</h2>
+            <ul>
+              <li><a href=""> Kadın Çantaları</a></li>
+              <li><a href="">Omuz Çantaları</a></li>
+              <li><a href="">El Çantaları</a></li>
+              <li><a href="">Kadın Crossover Çantaları</a></li>
+              
+              
+            </ul>
+            <h2>OUTDOOR ÇANTALARI </h2>
+            <h2>TÜM SIRT ÇANTALARI </h2>
+            <h2>TÜM SIRT ÇANTALARI</h2>
+            
+        </div>
+        
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2022/06/17/e40ead0b-d16e-4c1c-89fd-c28ded8d592a.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2022/06/17/5ba7f3b7-0be1-4ae7-a121-da369014f180.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+
+   </div>
+    </li>
+    <li class="cs-li"><p><span>Disney/Çocuk</span> <span>></span></p>
+      
+      <div class="cs-valizcontainer ">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="cs-valizcol1">
+          <h2>MODELE GÖRE</h2>
+            <ul>
+              <li><a href=""> Okul Sırt Çantaları</a></li>
+              <li><a href="">Çocuk Sırt Çantaları</a></li>
+              <li><a href="">Binilebilir Çocuk  Valizleri</a></li>
+              <li><a href="">Tüm Çocuk Çantaları</a></li>
+              
+            </ul>
+           
+        </div>
+        <div class="cs-valizcol1">
+          <h2>KARAKTERE GÖRE</h2>
+            <ul>
+              <li><a href=""> Donald Duck</a></li>
+              <li><a href="">Minnie Mouse</a></li>
+              <li><a href="">Mickey Mouse</a></li>
+              <li><a href="">Happy Sammies</a></li>
+              <li><a href="">Star Wars</a></li>
+              <li><a href="">Marvel</a></li>
+              
+            </ul>
+           
+        </div>
+        
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2020/06/12/60bf7f56-e668-4cb0-b1ee-42486171fa04.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2020/06/12/1555453e-f282-4f12-b1b8-51e5277508c9.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+
+   </div>
+    </li>
+    <li class="cs-li"><p><span>Aksesuarlar</span> <span>></span></p>
+      
+      <div class="cs-valizcontainer ">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="cs-valizcol1">
+          <h2>SEYEHAT AKSESUARLARI</h2>
+            <ul>
+              <li><a href="">Valiz Kılıfları</a></li>
+              <li><a href="">Boyun Yastıkları</a></li>
+              <li><a href="">Güvenlik Aksesuarları</a></li>
+              <li><a href="">Kozmetik Çantaları</a></li>
+              <li><a href="">Lipault Paris</a></li>
+              <li><a href="">Çocuk Valizleri</a></li>
+              <li><a href="">Takım Elbise Çantası</a></li>
+              <li><a href="">Tüm Valizler</a></li>
+            </ul>
+            <h2>ŞEMSİYELER </h2>
+            <ul>
+              <li><a href="">Şemsiyeler</a></li>
+            </ul>
+            <h2>CÜZDANLAR </h2>
+            <ul>
+              <li><a href="">Kadın Cüzdanları</a></li>
+              <li><a href="">Erkek Cüzdanları</a></li>
+            </ul>
+            <h2>TÜM AKSESUARLAR </h2>
+        </div>
+        
+        <div class="cs-valizcol1" style="width:20% ;">
+
+        </div>
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2020/06/15/dae3fbff-dd89-46c0-9311-deeb1e25c1b3.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2020/06/15/25424b24-f11c-4243-8bf2-989a9cb2adcc.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+
+   </div>
+    </li>
+    <li class="cs-li"><p><span>Markalar</span> <span>></span></p>
+      <div class="cs-valizcontainer ">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="cs-valizcol1">
+          
+            <ul>
+              <li><a href=""> Kabin Valizler</a></li>
+              <li><a href="">Orta Boy Valiz (60-69 cm)</a></li>
+              <li><a href="">Büyük Boy Valiz (80-86 cm)</a></li>
+             
+            </ul>
+           
+        </div>
+        
+        
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2022/06/17/39efbbaa-3339-4603-8ee6-3b6313dab58e.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+        <div class="cs-valizcol3">
+          <div><img src="https://cdn-sams.akinon.net/cms/2022/06/17/12b2f7d4-00be-4d83-8042-9d691274772d.jpg" alt=""></div>
+          <p>YENİ GELENLER</p>
+        </div>
+
+   </div>
+    </li>
+    <li style="width:80%"><a href="" class=" flex justify-between text-waterGreen-200 p-3 bg-waterGreen-100"><span>Eco Friendly</span> <span>></span></a>
+    
+    </li>
+    
+    
+    </li>
+    <li style="width: 80%;"><a href="" class="flex justify-between text-white p-3 bg-error-100"><span>Fırsat Ürünleri</span> <span>></span></a>
+    
+    </li>
+    <li class="cs-li"><p><span>Hizmetlerimiz</span> <span>></span></p>
+      <div class="cs-valizcontainer ">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="">
+          
+            <ul>
+              <li><a href=""> Sıkça Sorulan Sorular</a></li>
+              <li><a href="">İletişim</a></li>
+              <li><a href="">Garanti Politikamız</a></li>
+              <li><a href="">Ürün Sistem Kaydı</a></li>
+              <li><a href="">Servis Portalı</a></li>
+             
+            </ul>
+           
+        </div>
+        
+        
+        <div class="">
+          <div><img src="https://cdn-sams.akinon.net/cms/2021/04/29/713a2781-7e16-4898-81a7-35cd957668f5.jpg" alt=""></div>
+          <p class="font-bold py-2">Ürün Sistem Kaydı</p>
+        </div>
+        <div class="">
+          <div><img src="https://cdn-sams.akinon.net/cms/2021/04/29/44750f09-7045-438a-9505-17fad4d00993.jpg" alt=""></div>
+          <p class="font-bold py-2">Servis Portalı</p>
+        </div>
+  
+   </div>
+    </li>
+    <li class="cs-li"><p><span>Hakkımızda</span> <span>></span></p>
+      <div class="cs-valizcontainer ">
+        <h1 class="cancel">< GERİ</h1>
+        <div class="">
+          
+            <ul>
+              <li><a href=""> Tarihçe </a></li>
+              <li><a href="">Sürdürülebilirlik</a></li>
+              <li><a href="">Avrupa Üretimi/ Made in Europe</a></li>
+              <li><a href="">Koleksiyonlarımız</a></li>
+              <li><a href="">Mağazalarımız</a></li>
+             
+            </ul>
+           
+        </div>
+        
+        
+        <div class="">
+          <div><img src="https://cdn-sams.akinon.net/cms/2021/04/29/b62804b2-2a96-4c82-9cc4-fecdf3cc1142.jpg" alt=""></div>
+          <p class="font-bold py-2">Eco Valiz Çantalar</p>
+        </div>
+        <div class="">
+          <div><img src="https://cdn-sams.akinon.net/cms/2021/04/29/cf2c5b0b-af4f-4a98-bb59-45783356bb82.jpg" alt=""></div>
+          <p class="font-bold py-2">Mağazalarımız</p>
+        </div>
+  
+   </div>
+    </li>
+    <li class="border-2"><a href=""><span class="mr-3"><i class="pz-icon-user cs-hmgruser"></i></span> <span>Mağazalarımız</span></a>
+
+      <li class="border-b-2"><a href=""><span class="mr-3"><i class="fa-solid fa-location-pin"></i></span> <span>Hesabım</span></a>
+  </ul>
+    
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+        function language(e) {
+           let lancon = document.querySelector('.languagecon')
+           lancon.classList.toggle('addtrans')
+        }
+        function myselect(e) {
+          let textdanger=document.querySelector('.cs-danger')
+          textdanger.classList.toggle('d-none')
+        }
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js
+      "></script>
+     
+</body>
+</html>
